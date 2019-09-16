@@ -2,22 +2,39 @@
 
 #### In this assignment , We have to design the network (CIFAR10) generated from ENA's macro space search for image classification
 
+![alt text](https://github.com/rp8081/Session-7/blob/master/enasdiscoverednetwork.png)
+
 #### I have tried to include each and every skip connection (to the best of my visibility).							
 #### But because of large number of parameters(470,429)  and skip connection , model training is very slow . 
 ####  It takes 45 minutes for 1 epoch to run	. I have run it for 15 epoch.
 
-###### The challenge with this assignmnet is , while using skip connection we have to make sure size of channels are same .								
-###### How do we make same size ??								
-###### For example , let us consider layer 14 which has skip connections from 12,8,6,4,3 and 1.						
-###### Obviously there is direct connection from layer 13 as well .			
+##### The challenge with this assignmnet is , while using skip connection we have to make sure size of channels are same .			
 
-Layers	Size (height,weidth)
-Layer 13	(8,8)
-Layer 12	(8,8)
-Layer 8	(16,16)
-Layer 6	(16,16)
-Layer 4	(32,32)
-Layer 3	(32,32)
-Layer 1	(32,32)
+#### How do we make same size ??								
+##### For example , let us consider layer 14 which has skip connections from 12,8,6,4,3 and 1.						
+##### Obviously there is direct connection from layer 13 as well .			
+
+##### Original layers size :- 
+
+![alt text](https://github.com/rp8081/Session-7/blob/master/table1.png)
+
+##### Before conatenating  these layers ,  we have to make sure they all have same size. 	
+##### Since the minimum size(layer13 and layer 12) is 8. So we will make the size of all layer as 8.	
+##### For this we use tensorflow's space_to_depth (which reduces the size and correspondingly increases the depth) and Lambda from keras.
+
+##### Changed layers size (space to depth) :- 
+
+![alt text](https://github.com/rp8081/Session-7/blob/master/table2.png)
+
+
+##### The output of this  layer  is (8,8,1856) 				
+##### The depth has increased drrastically because of space to depth transformation.				
+				
+##### I have used 1*1 convolution to reduce number of channels.				
+		
+				
+
+
+
 
 
