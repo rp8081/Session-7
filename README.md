@@ -15,7 +15,7 @@
 
 ##### Original layers size :- 
 ![alt text](https://github.com/rp8081/Session-7/blob/master/table1.png)
-##### Before conatenating  these layers ,  we have to make sure they all have same size. 	
+##### Before concatenating  these layers ,  we have to make sure they all have same size. 	
 ##### Since the minimum size(layer13 and layer 12) is 8. So we will make the size of all layer as 8.	
 ##### For this we use tensorflow's space_to_depth (which reduces the size and correspondingly increases the depth) and Lambda from keras.
 
