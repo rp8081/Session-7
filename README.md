@@ -4,8 +4,8 @@
 
 ![alt text](https://github.com/rp8081/Session-7/blob/master/enasdiscoverednetwork.png)
 
-#### I have tried to include each and every skip connection (to the best of my visibility).  						
-#### But because of large number of parameters(470,429)  and skip connection , model training is very slow .    
+#### I have tried to include each and every skip connection (to the best of my visibility). But because of large number of parameters(470,429)  and skip connection , model training is very slow .  						
+
 ####  It takes 45 minutes for 1 epoch to run	. I have run it for 15 epoch.
 
 ##### The challenge with this assignmnet is , while using skip connection we have to make sure size of channels are same .		
