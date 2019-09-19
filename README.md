@@ -32,7 +32,7 @@ For this we use tensorflow's space_to_depth (which reduces the size and correspo
 
 <p>
 The output of this  layer  is (8,8,1856) 				
-The depth has increased drrastically because of space to depth transformation.		
+The depth has increased drastically because of space to depth transformation.		
 I have used 1*1 convolution to reduce number of channels.
 <p>
 
