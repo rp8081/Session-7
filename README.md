@@ -21,7 +21,6 @@ Obviously there is direct connection from layer 13 as well .
 Before concatenating  these layers ,  we have to make sure they all have same size. 	
 Since the minimum size(layer13 and layer 12) is 8. So we will make the size of all layer as 8.	
 For this we use tensorflow's space_to_depth (which reduces the size and correspondingly increases the depth) and Lambda from keras.
-
 <b> Changed layers size (space to depth) <b> :- 
 ![alt text](https://github.com/rp8081/Session-7/blob/master/table2.png)
 The output of this  layer  is (8,8,1856) 				
