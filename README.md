@@ -13,12 +13,14 @@ It takes 45 minutes for 1 epoch to run	. I have run it for 15 epoch.
 #### How do we make same size ??
 
 <p>
-For example , let us consider layer 14 which has skip connections from 12,8,6,4,3 and 1.						
+To undersatnd this , let us consider layer 14 which has skip connections from 12,8,6,4,3 and 1.						
 Obviously there is direct connection from layer 13 as well .
 <p>
 
 <b> Original layers size <b>:- 
 ![alt text](https://github.com/rp8081/Session-7/blob/master/table1.png)
+  
+<p> Before concatenating  these layers ,  we have to make sure they all have same size. <p>
 
 
 
