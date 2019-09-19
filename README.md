@@ -20,8 +20,10 @@ Obviously there is direct connection from layer 13 as well .
 <b> Original layers size <b>:- 
 ![alt text](https://github.com/rp8081/Session-7/blob/master/table1.png)
   
-<p> Before concatenating  these layers ,  we have to make sure they all have same size. <p>
-
+<p>
+I have tried to include each and every skip connection (to the best of my visibility). But because of large number of parameters(470,429)  and skip connection , model training is very slow .  						
+It takes 45 minutes for 1 epoch to run	. I have run it for 15 epoch.
+<p>
 
 
 
